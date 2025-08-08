@@ -1,0 +1,132 @@
+=> Install React
+
+npm create vite@latest
+my-app
+React 
+javascript
+cd my-app
+npm install
+npm run dev
+
+---------------------------------------------------------------------------
+
+=> React Router 
+https://reactrouter.com/en/main
+
+1. install 
+
+
+npm i react-router 
+
+
+2.
+
+
+---------------------------------------------------------------------------
+
+=> React Redux 
+
+https://redux.js.org/
+
+1.install (React-Redux = npm install react-redux)
+
+npm install @reduxjs/toolkit react-redux
+
+
+---------------------------------------------------------------------------
+
+Current Version = "react": "^18.3.1", ( 9 Jan 2025 )
+
+=> React Hook
+    React v16.8
+    ( just for Functional Components )
+
+    useState()
+    useEffect()
+    useContext()
+
+
+
+=> React Redux ( thirdparty library ) ( current version = "react-redux" : "9.2.0")
+    global state management 
+
+    1.Store = to store "Global State" 
+    2.Actions = Functions that describe what should happen 
+    3.Reducers = create logic funcitons to change "State" 
+    4.Dispatch = Mechanism to send actions to reducers 
+
+---------------------------------------------------------------------------
+
+=> Redux Middleware 
+
+1. create new folder src > middleware
+
+= read more 
+https://redux.js.org/tutorials/fundamentals/part-4-store#using-middleware 
+
+2. create log.js middleware
+3. use in store.js 
+
+Feature                                                   without Middleware                 with Middleware
+Synchronous                                               yes                                yes 
+Asynchronous (API calls, database access, timers)         no                                 yes 
+Logging / Debugging                                       no                                 yes
+Authentication & Authorization                            no                                 yes 
+Perfomance Optimization                                   no                                 yes 
+
+
+
+---------------------------------------------------------------------------
+
+=> Redux Middleware + Redux Logger (for action log, version ^3.0.6)
+
+https://www.npmjs.com/package/redux-logger
+
+1. install 
+npm i --save redux-logger
+
+2. 
+
+---------------------------------------------------------------------------
+
+=> axios ()
+
+
+
+https://axios-http.com/docs/intro
+
+npm install axios 
+
+
+---------------------------------------------------------------------------
+
+
+=> Set up Express API (backend)
+
+mkdir expressapi
+cd expressapi
+npm init -y 
+npm install express cors 
+
+
+create server.js 
+
+node server.js 
+
+
+---------------------------------------------------------------------------
+
+
+=> Install UUID package (vet : ^11.1.0)
+
+npm install uuid
+
+eg : with destructuring 
+const {v4:uuidv4} = require('uuid');
+
+
+eg : without destructuring
+const uuid = require('uuid');
+const uuidv4 = uuid.v4;
+
+---------------------------------------------------------------------------
