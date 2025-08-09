@@ -59,13 +59,13 @@ const Header = ()=>{
                 },
                 },
                 modes: {
-                push: {
-                    quantity: 4,
-                },
-                repulse: {
-                    distance: 200,
-                    duration: 0.4,
-                },
+                    push: {
+                        quantity: 4,
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4,
+                    },
                 },
             },
             particles: {
@@ -91,7 +91,7 @@ const Header = ()=>{
                 },
                 number: {
                 density: {
-                    enable: true,
+                    enable: false,
                 },
                 value: 80,
                 },
@@ -103,7 +103,7 @@ const Header = ()=>{
                 },
                 size: {
                     value: { min: 1, max: 5 },
-                },
+                }
             },
             detectRetina: true,
             }),
@@ -134,9 +134,10 @@ const Header = ()=>{
                 
 
                 {/*  start banner  */}
-                <div id="banner" className="banners" >
+                <div id="banner" className="banners">
 
-                    <Particles
+                    {init && (
+                        <Particles
                         id="tsparticles"
                         particlesLoaded={particlesLoaded}
                         options={options}
@@ -145,10 +146,12 @@ const Header = ()=>{
                             top: 0,
                             left: 0,
                             width: "100%",
-                            height: "100%",
-                            zIndex: 0
+                            height: "100%", 
+                            zIndex: 1,
+                            pointerEvents:"none"
                         }}
-                    />
+                        />
+                    )}
                     
                     <div className="container">
                         <div className="row">

@@ -23,6 +23,13 @@
     padding: 0;
 }
 
+header{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
 
 body{
 
@@ -146,6 +153,12 @@ h1,h2,h3,h4,h5,h6{
 /* end navbar  */
 
 /* start banner */
+
+#banner{
+    position: relative;
+    height: 100vh;
+}
+
 
 .banners{
     height: 100vh;

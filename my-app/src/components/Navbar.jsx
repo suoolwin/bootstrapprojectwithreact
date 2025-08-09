@@ -27,7 +27,7 @@ const Navbar = ()=>{
                             <li className="nav-item"><Link href="#clients" className="nav-link">Clients</Link></li>
                             <li className="nav-item"><Link href="#about" className="nav-link">About</Link></li>
                             <li className="nav-item btn-group">
-                                <Link href="#software" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Software <FontAwesomeIcon icon="fa-solid fa-caret-down" /></Link>
+                                <Link href="#software" className="nav-link" data-bs-toggle="dropdown">Software <FontAwesomeIcon icon="fa-solid fa-caret-down" /></Link>
                                 <ul className="dropdown-menu">
                                     <li><Link href="javascript:void(0);" className="dropdown-item">Android App</Link></li>
                                     <li><Link href="javascript:void(0);" className="dropdown-item">IOS App</Link></li>
